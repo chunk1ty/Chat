@@ -1,0 +1,43 @@
+﻿<div class="modal-body row">
+    <div id="rooms" class="col-2">
+        <input id="family" type="button" class="btn btn btn-outline-secondary btn-block text-left" value="Family" />
+        <input id="friends" type="button" class="btn btn-outline-secondary btn-block text-left" value="Friends" />
+        <input id="work" type="button" class="btn btn-outline-secondary btn-block text-left" value="Work" />
+    </div>
+    <div class="col-10" style="border: 1px solid grey;">
+        <div style="height:500px; overflow-y: auto;">
+            <ul id="messagesList" style="list-style-type:none; padding-left: 0">
+
+            </ul>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-10">
+                <input id="messageInput" type="text" class="form-control" placeholder="input msg here...">
+            </div>
+           
+            <input id="sendButton" type="button"  class="btn btn-outline-secondary text-left" value="Send" />
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">User name</h5>               
+            </div>
+            <div class="modal-body">
+                <input id="userName" type="text" class="form-control"  />
+            </div>
+            <div class="modal-footer">                
+                <button id="continueBtn" type="button" class="btn btn-outline-secondary">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts {   
+    <script src="~/js/chat.js"></script>   
+}
